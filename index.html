@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSEDELWEISSVILLA</title>
+     <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #d6eff4;
+      color: #333;
+    }
+      
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: -40px;
+      z-index: 2;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .content h2 {
+      margin-top: 0;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+    .container {
+      padding: 2em;
+      max-width: 1200px;
+      margin: auto;
+    }
+  .description {
+      margin-bottom: 2em;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5em;
+      margin-bottom: 2em;
+    }
+    .feature-box {
+      background: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      overflow-x: hidden;
+      gap: 1em;
+      scroll-behavior: smooth;
+      margin-bottom: 2em;
+    }
+     .gallery img {
+      max-height: 250px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #2c7a7b;
+      color: white;
+      padding: 0.75em 1.5em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #285e61;
+    }
+
+     .wa-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .wa-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .tombol-merah {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .tombol-merah:hover {
+    background-color: #cc0000;
+  }
+
+    .gallery {
+      display: flex;
+      overflow-x: hidden;
+      gap: 1em;
+      scroll-behavior: smooth;
+      margin-bottom: 2em;
+    }
+     .gallery img {
+      max-height: 750px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+  .gallery {
+  display: flex;
+  overflow-x: hidden; 
+  gap: 1em;
+  scroll-behavior: smooth;
+  margin-bottom: 2em;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+footer {
+  background: #2c7a7b; /* warna senada dengan tema */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer span {
+  display: inline-block;
+  max-width: 1200px; /* mengikuti ukuran container website */
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+</style>
+
+    
+
+</head>
+<body>
+
+    <header>
+    <center>
+      <h1>MS EDELWEISS VILLA</h1>
+      <h4>Villa di kawasan dago pakar bandung</h4>
+    </center>
+  </header>
+
+  <div class="container">
+    <section class="description">
+      <h2>Tentang Villa</h2>
+      <p>
+        MS Edelweiss villa adalah tempat staycation mewah yang terletak di jantung wisata dago bandung. Nikmati suasana damai, kolam renang pribadi, dan suasana yang menakjubkan setiap hari.
+      </p>
+    </section>
+
+   <section class="features">
+      <div class="feature-box">
+        <h3>🛏 Kamar Tidur</h3>
+        <p>Nyaman dan luas, cocok untuk keluarga.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🏊 Kolam Renang</h3>
+        <p>Kolam pribadi dengan pemandangan alam.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📶 Wi-Fi </h3>
+        <p>Internet cepat untuk bersantai.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🍽 Dapur Lengkap</h3>
+        <p>Masak dengan fasilitas dapur modern.</p>
+      </div>
+    </section>
+  <section>
+      <div class="gallery" id="gallery">
+        <img src="edelweiss08.1.jpg" alt="Villa 1">
+        <img src="edelweiss08.2.jpg" alt="Villa 2">
+        <img src="edelweiss08.3.jpg" alt="Villa 3">
+        <img src="edelweiss08.4.jpg" alt="Villa 4">
+        <img src="edelweiss08.5.jpg" alt="Villa 5">
+        <img src="edelweiss08.6.jpg" alt="Villa 5">
+        <img src="edelweiss08.7.jpg" alt="Villa 5">
+        <img src="edelweiss08.8.jpg" alt="Villa 5">
+        <img src="edelweiss08.9.jpg" alt="Villa 5">
+        <img src="edelweiss08.10.jpg" alt="Villa 5">
+        <img src="edelweiss08.11.jpg" alt="Villa 5">
+        <img src="edelweiss08.12.jpg" alt="Villa 5">
+        
+      </div>
+
+       <div class="content">
+    <h2>Tentang Villa</h2>
+    <p>
+      Villa ini terletak di kawasan elit Dago Pakar, Bandung. Cocok untuk keluarga, gathering, ataupun liburan romantis. 
+      Menawarkan udara sejuk, dan fasilitas lengkap seperti kolam renang pribadi, dapur modern, dan akses WiFi.
+    </p>
+    <h3>Fasilitas:</h3>
+    <ul>
+      <li>5 Kamar Tidur + AC</li>
+      <li>Kolam Renang</li>
+      <li>Dapur & Peralatan Lengkap</li>
+      <li>WiFi</li>
+      <li>karaoke</li>
+      <li>Water heater</li>
+    </ul>
+    <h3>Harga Sewa</h3>
+    <p>Mulai dari <strong>Rp.-/malam</strong> (tergantung hari).</p>
+    <p>Hubungi kami via WhatsApp untuk informasi lengkap dan booking!</p>
+  </div>
+</section>
+
+<section>
+      <div class="gallery" id="gallery">
+        <img src="edelweiss18.7.jpg" alt="Villa 1">
+        <img src="edelweiss18.2.jpg" alt="Villa 1">
+        <img src="edelweiss18.3.jpg" alt="Villa 1">
+        <img src="edelweiss18.4.jpg" alt="Villa 1">
+        <img src="edelweiss18.5.jpg" alt="Villa 1">
+        <img src="edelweiss18.6.jpg" alt="Villa 1">
+        <img src="edelweiss18.8.jpg" alt="Villa 1">
+      </div>
+
+       <div class="content">
+    <h2>Tentang Villa</h2>
+    <p>
+      Villa ini terletak di kawasan elit Dago Pakar, Bandung. Cocok untuk keluarga, gathering, ataupun liburan romantis. 
+      Menawarkan udara sejuk, dan fasilitas lengkap seperti kolam renang pribadi, dapur modern, dan akses WiFi.
+    </p>
+    <h3>Fasilitas:</h3>
+    <ul>
+      <li>4 Kamar Tidur + AC</li>
+      <li>Kolam Renang</li>
+      <li>Dapur & Peralatan Lengkap</li>
+      <li>WiFi</li>
+      <li>Water heater</li>
+    </ul>
+    <h3>Harga Sewa</h3>
+    <p>Mulai dari <strong>Rp,-/malam</strong> (tergantung hari).</p>
+    <p>Hubungi kami via WhatsApp untuk informasi lengkap dan booking!</p>
+  </div>
+</section>
+
+<section>
+      <div class="gallery" id="gallery">
+        <img src="edelweiss42.5.jpg" alt="Villa 1">
+        <img src="edelweiss42.2.jpg" alt="Villa 1">
+        <img src="edelweiss42.3.jpg" alt="Villa 1">
+        <img src="edelweiss42.4.jpg" alt="Villa 1">
+        <img src="edelweiss42.6.jpg" alt="Villa 1">
+
+      </div>
+
+       <div class="content">
+        
+    <h2>Tentang Villa</h2>
+    <p>
+      Villa ini terletak di kawasan elit Dago Pakar, Bandung. Cocok untuk keluarga, gathering, ataupun liburan romantis. 
+      Menawarkan udara sejuk, dan fasilitas lengkap seperti kolam renang pribadi, dapur modern, dan akses WiFi.
+    </p>
+    <h3>Fasilitas:</h3>
+    <ul>
+      <li>4 Kamar Tidur + AC</li>
+      <li>Kolam Renang</li>
+      <li>Dapur & Peralatan Lengkap</li>
+      <li>WiFi</li>
+      <li>Water heater</li>
+    </ul>
+    <h3>Harga Sewa</h3>
+    <p>Mulai dari <strong>Rp.-/malam</strong> (tergantung hari).</p>
+    <p>Hubungi kami via WhatsApp untuk informasi lengkap dan booking!</p>
+  </div>
+</section>
+
+<section>
+      <div class="gallery" id="gallery">
+        <img src="edelweiss92.1.jpg" alt="Villa 1">
+        <img src="edelweiss92.2.jpg" alt="Villa 1">
+        <img src="edelweiss92.3.jpg" alt="Villa 1">
+        <img src="edelweiss92.4.jpg" alt="Villa 1">
+        <img src="edelweiss92.5.jpg" alt="Villa 1">
+        <img src="edelweiss92.6.jpg" alt="Villa 1">
+        <img src="edelweiss92.7.jpg" alt="Villa 1">
+        <img src="edelweiss92.8.jpg" alt="Villa 1">
+        <img src="edelweiss92.9.jpg" alt="Villa 1">
+        <img src="edelweiss92.10.jpg" alt="Villa 1">
+        <img src="edelweiss92.11.jpg" alt="Villa 1">
+        <img src="edelweiss92.12.jpg" alt="Villa 1">
+
+
+      </div>
+
+       <div class="content">
+    <h2>Tentang Villa</h2>
+    <p>
+      Villa ini terletak di kawasan elit Dago Pakar, Bandung. Cocok untuk keluarga, gathering, ataupun liburan romantis. 
+      Menawarkan pemandangan pegunungan, udara sejuk, dan fasilitas lengkap seperti kolam renang pribadi, dapur modern, dan akses WiFi.
+    </p>
+    <h3>Fasilitas:</h3>
+    <ul>
+      <li>5 Kamar Tidur + AC</li>
+      <li>Kolam Renang</li>
+      <li>Dapur & Peralatan Lengkap</li>
+      <li>WiFi</li>
+      <li>Water heater</li>
+      <li>Karaoke</li>
+      <li>Billiard</li>
+    </ul>
+    <h3>Harga Sewa</h3>
+    <p>Mulai dari <strong>Rp.-/malam</strong> (tergantung hari).</p>
+    <p>Hubungi kami via WhatsApp untuk informasi lengkap dan booking!</p>
+  </div>
+</section>
+
+<center><h1>MS EDELWEISS VILLA</h1>
+<p>Jl.Raya Resort Jl.Dago Pakar Mawar 1 No.63, Mekarsaluyu, Kec.Cimenyan, Kabupaten Bandung, Jawa Barat, 40198</p>
+ <footer>
+    <p><span>© 2025 MS Edelweiss Villa</span></p>  
+  </footer>
+
+    <a class="wa-button" href="https://wa.me/6285722526069?text=Halo,info MS Edelweiss villa?"_blank>
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp Icon"/>
+    Hubungi Kami
+  </a>
+  
+<script>
+// Fungsi untuk membuat semua galeri jadi carousel otomatis
+document.addEventListener("DOMContentLoaded", () => {
+  const galleries = document.querySelectorAll(".gallery");
+  const intervalTime = 2500; // 2.5 detik
+
+  galleries.forEach(gallery => {
+    let scrollAmount = 0;
+    const scrollStep = gallery.clientWidth; // scroll sejauh lebar tampilan
+
+    setInterval(() => {
+      if (scrollAmount + gallery.clientWidth >= gallery.scrollWidth) {
+        scrollAmount = 0; // reset ke awal jika sudah di ujung kanan
+      } else {
+        scrollAmount += scrollStep;
+      }
+      gallery.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
+    }, intervalTime);
+  });
+});
+</script>
+
+   
+    
+</body>
+</html>
+
+
